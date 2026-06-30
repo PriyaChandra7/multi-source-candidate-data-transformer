@@ -1,0 +1,12 @@
+{
+    "full_name": "John Doe",
+    "primary_email": "john.doe@gmail.com",
+    "phone": "+919876543210",
+    "skills": [
+        "Python",
+        "Java",
+        "Machine Learning",
+        "SQL"
+    ],
+    "overall_confidence": 0.87
+}
