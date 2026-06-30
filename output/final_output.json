@@ -1,12 +1,30 @@
 {
-    "full_name": "John Doe",
-    "primary_email": "john.doe@gmail.com",
-    "phone": "+919876543210",
+    "full_name": "Priya Chandra",
+    "primary_email": "priyachandra1728@gmail.com",
+    "phone": "+919910015879",
     "skills": [
+        "Mediapipe",
         "Python",
+        "Vs Code",
+        "Oop",
+        "Javascript",
+        "C++",
+        "SQL",
+        "Bootstrap",
         "Java",
+        "Flask",
+        "Mysql",
+        "Git",
         "Machine Learning",
-        "SQL"
+        "Opencv",
+        "Github",
+        "Deep Learning",
+        "Tensorflow",
+        "Html",
+        "Dbms",
+        "Dsa",
+        "C",
+        "Css"
     ],
-    "overall_confidence": 0.87
+    "overall_confidence": 0.75
 }

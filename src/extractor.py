@@ -38,25 +38,26 @@ def extract_name(text):
 
 def extract_skills(text):
     """
-    Extract skills listed after 'Skills:' section.
+    Extract technical skills using keyword matching.
+    Works with different resume formats.
     """
+
+    skill_keywords = [
+        "Python", "C", "C++", "Java", "SQL", "MySQL",
+        "HTML", "CSS", "JavaScript",
+        "Machine Learning", "Deep Learning", "TensorFlow",
+        "OpenCV", "MediaPipe", "Flask", "Bootstrap",
+        "Git", "GitHub", "VS Code",
+        "DBMS", "OOP", "DSA"
+    ]
 
     skills = []
 
-    if "Skills:" in text:
+    text_lower = text.lower()
 
-        section = text.split("Skills:")[1]
-
-        lines = section.strip().split("\n")
-
-        for line in lines:
-
-            line = line.strip()
-
-            if line == "" or ":" in line:
-                break
-
-            skills.append(line)
+    for skill in skill_keywords:
+        if skill.lower() in text_lower:
+            skills.append(skill)
 
     return skills
 

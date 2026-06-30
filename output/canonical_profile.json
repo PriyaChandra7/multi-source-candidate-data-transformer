@@ -1,17 +1,35 @@
 {
     "candidate_id": "CAND001",
-    "full_name": "John Doe",
+    "full_name": "Priya Chandra",
     "emails": [
-        "john.doe@gmail.com"
+        "priyachandra1728@gmail.com"
     ],
     "phones": [
-        "+919876543210"
+        "+919910015879"
     ],
     "skills": [
+        "Mediapipe",
         "Python",
+        "Vs Code",
+        "Oop",
+        "Javascript",
+        "C++",
+        "SQL",
+        "Bootstrap",
         "Java",
+        "Flask",
+        "Mysql",
+        "Git",
         "Machine Learning",
-        "SQL"
+        "Opencv",
+        "Github",
+        "Deep Learning",
+        "Tensorflow",
+        "Html",
+        "Dbms",
+        "Dsa",
+        "C",
+        "Css"
     ],
     "current_company": "Google",
     "title": "Software Engineer",
@@ -42,12 +60,12 @@
         }
     ],
     "confidence": {
-        "full_name": 0.95,
-        "emails": 0.95,
+        "full_name": 0.6,
+        "emails": 0.6,
         "phones": 0.85,
         "skills": 0.85,
         "current_company": 0.8,
         "title": 0.8
     },
-    "overall_confidence": 0.87
+    "overall_confidence": 0.75
 }
