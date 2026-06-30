@@ -1,5 +1,5 @@
 import pandas as pd
-
+import fitz
 
 def read_csv(csv_path):
     """
@@ -16,15 +16,23 @@ def read_csv(csv_path):
 
 def read_resume(resume_path):
     """
-    Reads resume text file and returns its content.
+    Reads resume PDF and returns extracted text.
     """
-    try:
-        with open(resume_path, "r", encoding="utf-8") as file:
-            text = file.read()
 
-        print("✓ Resume loaded successfully.")
+    try:
+        doc = fitz.open(resume_path)
+
+        text = ""
+
+        for page in doc:
+            text += page.get_text()
+
+        doc.close()
+
+        print("✓ Resume PDF loaded successfully.")
+
         return text
 
     except Exception as e:
-        print(f"Error reading resume: {e}")
+        print(f"Error reading resume PDF: {e}")
         return None
